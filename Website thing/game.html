@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>My Game</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="inner">
+
+					<!-- Logo -->
+					<a href="index.html" class="logo">
+						Home
+					</a>
+
+
+			
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+					<h1>My Game</h1>
+					
+
+
+				<!-- Image -->
+			<section>
+				<div class="inner">
+					
+					<div class="box alt">
+						<div class="row gtr-uniform">
+							<div class="col-12"><video class="image fit" autoplay muted loop><source src="images/Game/New/Clip1.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+							<p>
+								This is the game I have been slowly working on for a few months now, I have created everything from code to art. Before I started on this game I only had about a month of game dev experience in Unity, I have picked up C# quite quickly due to knowing a different language, Visual Basic, previously.
+							</p>
+							<div class="col-6"><video class="image fit" autoplay muted loop><source src="images/Game/New/Nested Sequence 01.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+							<div class="col-6"><video class="image fit" autoplay muted loop><source src="images/Game/New/Nested Sequence 06.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+							<p>To connect rooms in my game I opted for a very simple level manager, it uses scriptable objects to connect scenes. This system is a reliable and easily expandable way to create scene transitions and I continue to create rooms.</p>
+							<div class="col-6"><video class="image fit" autoplay muted loop><source src="images/Game/New/Nested Sequence 03.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+							<div class="col-6"><video class="image fit" autoplay muted loop><source src="images/Game/New/Nested Sequence 04.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+							<p>
+								The player is not able to interact with anything when enemies are nearby, this is done with a simple trigger collider. You may also realise the character says different things in both these clips, when creating the dialogue system I didn't want dialogue options but I also didn't want dialogue to be boring. This is a small example of the NPC reacting to the players health, in the future I can expand on this easily with the system I created.
+							</p>
+							<div class="col-6"><video class="image fit" autoplay muted loop><source src="images/Game/New/Nested Sequence 07.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+							<div class="col-6"><video class="image fit" autoplay muted loop><source src="images/Game/New/Nested Sequence 09.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+							<div class="col-6"><video class="image fit" autoplay muted loop><source src="images/Game/New/Nested Sequence 05.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+							<div class="col-6"><video class="image fit" autoplay muted loop><source src="images/Game/New/Nested Sequence 08.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+							<p>Keeping the scope of the game small when creating a metroidvania is definitely tricky, I plan on creating one area at a time to easily limit scope, this and, for me i'm creating this game more for fun and a learning experience rather than creating a final product. </p>
+							<div class="col-6"><video class="image fit" autoplay muted loop><source src="images/Game/GameClip6.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+							<div class="col-6"><video class="image fit" autoplay muted loop><source src="images/Game/GameClip7.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+							<p>
+								The player and all the enemies use finite state machines, with a state machine behaviour is split up into distinct stats, for example running, idling or attacking. States are connected by transitions, which allow the enemy or player to move between states based on certain conditions like a button press.They are also really good for the efficiency of code as everything is organised into distinct states meaning it's easier to manage and debug. It also means I can create new enemies quicker as I don't have to rewrite any code for the states I've already created.
+							</p>
+						</div>
+					</div>
+					<h2>Map / Level Design</h2>
+					<div class="box alt">
+						<div class="row gtr-uniform">
+
+							<span class="image main"><img src="images/Game/MapDesignNew.jpg" alt="" /></span>
+							<div class="col-6"><span class="image fit"><img src="images/Game/CloseMapDesign.jpg" alt="" /></span></div>
+							<div class="col-6"><span class="image fit"><img src="images/Game/CloseMapDesignReal.jpg" alt="" /></span></div>
+							<p>
+								As the game is a metroidvania it will have a large and interconnected map, rather than loading a single large scene I decided to split the map into different rooms. This allows for fast loading times and a high framerate at all times. To keep track of all the levels I'm using a tool called Level Designer Toolkit, an open source map making level editor from the creator of Dead Cells. In LDtk I block each level so I can visualise it and know what levels it's going to be connected to, I then import them as PNG's into Unity and go over them with the tilesets I have created. I use Unitys auto tilemap feature which allows you to create rules for tiles in your scene and how they should connect, I can then quickly populate the level with decorations and enemies. Once I have created the art for a level, building it is relatively quick with this method.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+				</div>
+			</div>
+
+
+>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

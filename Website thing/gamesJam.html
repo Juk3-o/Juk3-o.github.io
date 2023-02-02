@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>Game Jams</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					Home
+				</a>
+
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<h1>Game Jams</h1>
+				<p>A game jam is an event where participants create a video game in a short period of time, typically within 24 to 72 hours. The goal of a game jam is to encourage experimentation and to provide an opportunity for people to learn new skills in a very short amount of time. Each jam has a specific theme to it which you should keep your game to, at the end of most jams there is a judging phase where everyone in the jam plays and rates each other's game and by the end your game is given a score.</p>
+			</div>
+		</div>
+
+		<section>
+
+		<!-- Image -->
+			<div class="inner">
+				<h2>Ludum Dare 52</h2>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-12"><span class="image fit"><img src="images/Game/GJ/SpritesLD52.png" alt="" /></span></div>
+						<p>Ludum Dare is a 72 hour game jam, unfortunately I was unable to participate in the full three days and could only do two. Still I feel I managed to create a polished and finished product by the end of it. With this jam the theme was Harvest, I didn’t want to create a farm themed game as I thought that's what everyone else would do so I went down the route of harvesting rocks and different ore. Above is all the art I created for the jam, the idea was simple so I didn’t need much art. The idea I had for the game was a top down mining game where you enter a cave to collect resources, you can leave the cave at any time and the amount of coins you leave with would be your score. If you die in the cave you lose all your score, the longer you are in the cave the more zombies spawn, so it's a game of risk. Do you stay in the cave longer to get a higher score but potentially lose all your coins or leave early with a smaller score?</p>
+						<div class="col-6"><video class="image fit" autoplay muted loop><source src="images/Game/GJ/LDvid2.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+						<div class="col-6"><video class="image fit" autoplay muted loop><source src="images/Game/GJ/LDvid1.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+						<p>I used Unitys auto-tile system to create the map, this allowed me to be able to quickly edit and change it which was perfect for the game jam. I also used Unity’s 2D Universal Render Pipeline so I could use 2D lights to give a real atmosphere to the game. By also utilising normal maps on the pixel art textures it upgraded the graphics with depth and gave an almost 3D feel to the game.</p>
+						<div class="col-6"><video class="image fit" autoplay muted loop><source src="images/Game/GJ/Nested Sequence 01.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+						<div class="col-6"><video class="image fit" autoplay muted loop><source src="images/Game/GJ/Nested Sequence 02.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+						<div class="col-6"><video class="image fit" autoplay muted loop><source src="images/Game/GJ/Nested Sequence 03.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+						<div class="col-6"><video class="image fit" autoplay muted loop><source src="images/Game/GJ/Nested Sequence 04.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+						<p>
+							The game is complete with a title screen, tutorial and highscore system. Each colour rock takes a different amount of hits and contains a different amount of coins, once the rock has been hit enough times the game object is destroyed and an appropriate amount of coins are instantiated and given a little bit of force in a random direction.
+						</p>
+						<div class="col-6"><video class="image fit" autoplay muted loop><source src="images/Game/GJ/Nested Sequence 05.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+						<div class="col-6"><video class="image fit" autoplay muted loop><source src="images/Game/GJ/Nested Sequence 06.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+						<p>The player can either survive with the coins they have by leaving the cave from an available exit, or lose all their coins to the zombies. The zombies use A* pathfinding to find the closest path towards the player, when colliding with the player the game ends. </p>
+						<div class="col-6"><span class="image fit"><img src="images/Game/ldresult.jpg" alt="" /></span>  </div>
+						<div span class="col-6"><span class="image fit">  Over 1000 games were submitted into the jam, also considering it was my first jam I'm pretty happy with 252nd. In the mood category I placed 13th which I'm quite proud of. The game's atmosphere and mood is heavily due to the audio, if you would like to play the game here's the link: <a href="url">https://jakejet.itch.io/dark-harvest</a> </span></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>
